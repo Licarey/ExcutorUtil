@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liming.validateproject" >
+
+    <application
+        android:name="com.example.liming.APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="demo"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".GestureLockActivty"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".FingerprintMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Test"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".InputEndValideActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.liming.processor.TestProcessorActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+</manifest>
